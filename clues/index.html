@@ -1,858 +1,1226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>F126</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.5.1/css/pro.min.css">
-  <link href="../app/app.css" rel="stylesheet">
-</head>
-<body>
-
-<hr>
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="../index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 f126applogo">
-        <img src="../main/f126.png" width="100px">
-      </a>
-      <span class="mb-3 mb-md-0 metatitle">F126 Skiller Tools</span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F126 - OSRS tools for Skillers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.5.1/css/pro.min.css">
+    <link href="../app/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <hr>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="../index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 f126applogo">
+            <img src="../main/f126.png" width="100px">
+          </a>
+          <span class="mb-3 mb-md-0 metatitle">F126 Skiller Tools</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary btn btn-outline-secondary d-inline-flex align-items-center" href="../index.html">
+              <i class="fa-duotone fa-left-to-line"></i>&nbsp;Go Back </a>
+          </li>
+        </ul>
+      </footer>
     </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary btn btn-outline-secondary d-inline-flex align-items-center" href="../index.html"><i class="fa-duotone fa-left-to-line"></i>&nbsp;Go Back</a></li>
-    </ul>
-  </footer>
-  </div>
-  <div class="container">
-    <h5 class="card-title text-center"><br>Easy Clue STASH</h5>
-    <div class="table-responsive">
-      <table class="table table-striped table-bordered">
-        <thead>
-          <tr>
-            <th>Clue</th>
-            <th class="text-center">Items</th>
-            <th class="text-center">STASH <a type="button" class="stashi"
-        data-bs-toggle="tooltip" data-bs-placement="top"
-        data-bs-custom-class="custom-tooltip"
-        data-bs-title="Click on stash button to view more details">
-  <i class="fa-duotone fa-circle-info"></i>
-</a></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="cluestep">Cheer at the Druids' Circle.
-Equip a blue wizard hat, a bronze two-handed sword and HAM boots.</td>
-            <td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue wizard hat" class="itemc"src="https://oldschool.runescape.wiki/images/Blue_wizard_hat.png?04bdb"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze 2h sword" class="itemc"src="https://oldschool.runescape.wiki/images/Bronze_2h_sword.png?fe489"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham boots" class="itemc"src="https://oldschool.runescape.wiki/images/Ham_boots.png?64612"></td>
-            <td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#1"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Cheer at the games room.
-Have nothing equipped at all when you do.</td>
-<td><center>Nothing</center></td>
-<td><a type="button" class=""  ><i class="fa-sharp fa-solid fa-box-open stashn"></i></a></td>
-
-          </tr>
-          <tr>
-            <td>Clap in the main exam room in the Exam Centre.
-Equip a white apron, green gnome boots and leather gloves.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="White apron" class="itemc"src="https://oldschool.runescape.wiki/images/White_apron.png?f5d8b"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green boots" class="itemc"src="https://oldschool.runescape.wiki/images/Green_boots.png?e06cd"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather gloves" class="itemc"src="https://oldschool.runescape.wiki/images/Leather_gloves.png?6592f"></td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#3"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-
-          </tr>
-          <tr>
-            <td>Clap on the causeway to the Wizards' Tower.
-Equip an iron medium helmet, emerald ring and a white apron.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron med helm" class="itemc"src="https://oldschool.runescape.wiki/images/Iron_med_helm.png?9e4d4"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emerald ring" class="itemc"src="https://oldschool.runescape.wiki/images/Emerald_ring.png?7a7c0"><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="White apron" class="itemc"src="https://oldschool.runescape.wiki/images/White_apron.png?f5d8b"></td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#4"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-
-          </tr>
-          <tr>
-            <td>Clap on the top level of the mill, north of East Ardougne.
-Equip a blue gnome robe top, HAM robe bottom and an unenchanted tiara.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue robe top" class="itemc"src="https://oldschool.runescape.wiki/images/Blue_robe_top.png?4e92f">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham robe" class="itemc"src="https://oldschool.runescape.wiki/images/Ham_robe.png?64612">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tiara" class="itemc"src="https://oldschool.runescape.wiki/images/Tiara.png?c9227">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#5"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Dance a jig by the entrance to the Fishing Guild.
-Equip an emerald ring, a sapphire amulet, and a bronze chain body.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emerald ring" class="itemc"src="https://oldschool.runescape.wiki/images/Emerald_ring.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Sapphire amulet" class="itemc"src="https://oldschool.runescape.wiki/images/Sapphire_amulet.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze chainbody" class="itemc"src="https://oldschool.runescape.wiki/images/Bronze_chainbody.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#6"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Dance at the crossroads north of Draynor.
-Equip an iron chain body, a sapphire ring and a longbow.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron chainbody" class="itemc"src="https://oldschool.runescape.wiki/images/Iron_chainbody.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Sapphire ring" class="itemc"src="https://oldschool.runescape.wiki/images/Sapphire_ring.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Longbow" class="itemc"src="https://oldschool.runescape.wiki/images/Longbow.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#7"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Dance at the entrance to the Grand Exchange. Equip a pink skirt, pink robe top and a body tiara.</td>
-            <td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pink skirt" class="itemc"src="https://oldschool.runescape.wiki/images/Pink_skirt.png?7a7c0">
-              <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pink robe top" class="itemc"src="https://oldschool.runescape.wiki/images/Pink_robe_top.png?3f71e">
-              <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Body tiara" class="itemc"src="https://oldschool.runescape.wiki/images/Body_tiara.png?05d25">
-            </td>
-            <td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#8"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Dance in the shack in Lumbridge Swamp.
-Equip a bronze dagger, iron full helmet and a gold ring.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze dagger" class="itemc"src="https://oldschool.runescape.wiki/images/Bronze_dagger.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron full helm" class="itemc"src="https://oldschool.runescape.wiki/images/Iron_full_helm.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold ring" class="itemc"src="https://oldschool.runescape.wiki/images/Gold_ring.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#9"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Do a jig in Varrock's rune store. Equip an air tiara and a staff of water.</td>
-            <td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Air tiara" class="itemc"src="https://oldschool.runescape.wiki/images/Air_tiara.png?7a7c0">
-              <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Staff of water" class="itemc"src="https://oldschool.runescape.wiki/images/Staff_of_water.png?3f71e">
-
-            </td>
-            <td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#10"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Headbang in the mine north of Al Kharid.
-Equip a desert shirt, leather gloves and leather boots.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Desert shirt" class="itemc"src="https://oldschool.runescape.wiki/images/Desert_shirt.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather gloves" class="itemc"src="https://oldschool.runescape.wiki/images/Leather_gloves.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather boots" class="itemc"src="https://oldschool.runescape.wiki/images/Leather_boots.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#11"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Laugh at the crossroads south of the Sinclair mansion. Equip a cowl, a blue wizard robe top and an iron scimitar.</td>
-            <td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather cowl" class="itemc"src="https://oldschool.runescape.wiki/images/Leather_cowl.png?7a7c0">
-              <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue wizard robe" class="itemc"src="https://oldschool.runescape.wiki/images/Blue_wizard_robe.png?3f71e">
-              <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron scimitar" class="itemc"src="https://oldschool.runescape.wiki/images/Iron_scimitar.png?05d25">
-            </td>
-            <td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#12"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Panic on the pier where you catch the Fishing trawler.
-Have nothing equipped at all when you do.</td>
-<td><center>Nothing</center></td>
-<td><a type="button" class=""  ><i class="fa-sharp fa-solid fa-box-open stashn"></i></a></td>
-          </tr>
-          <tr>
-            <td>Shrug in the mine near Rimmington.
-Equip a gold necklace, a gold ring and a bronze spear.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold necklace" class="itemc"src="https://oldschool.runescape.wiki/images/Gold_necklace.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold ring" class="itemc"src="https://oldschool.runescape.wiki/images/Gold_ring.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze spear" class="itemc"src="https://oldschool.runescape.wiki/images/Bronze_spear.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#13"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Spin at the crossroads north of Rimmington.
-Equip a green gnome hat, cream gnome top and leather chaps.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green hat" class="itemc"src="https://oldschool.runescape.wiki/images/Green_hat.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cream robe top" class="itemc"src="https://oldschool.runescape.wiki/images/Cream_robe_top.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather chaps" class="itemc"src="https://oldschool.runescape.wiki/images/Leather_chaps.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#14"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <tr>
-            <td>Yawn in the Varrock library.
-Equip a green gnome robe top, HAM robe bottom and an iron warhammer.</td>
-<td><img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green robe top" class="itemc"src="https://oldschool.runescape.wiki/images/Green_robe_top.png?7a7c0">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham robe" class="itemc"src="https://oldschool.runescape.wiki/images/Ham_robe.png?3f71e">
-  <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron warhammer" class="itemc"src="https://oldschool.runescape.wiki/images/Iron_warhammer.png?05d25">
-</td>
-<td><a type="button" class=""  data-bs-toggle="modal" data-bs-target="#15"><i class="fa-sharp fa-solid fa-box-open stashy"></i></a></td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Taverley</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/QHE9R47.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Exam centre</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/qvfLchc.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <div class="container">
+      <h5 class="card-title text-center">
+        <br>Easy Clue STASH
+      </h5>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Clue</th>
+              <th class="text-center">Items</th>
+              <th class="text-center">STASH <a type="button" class="stashi" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Click on stash button to view more details">
+                  <i class="fa-duotone fa-circle-info"></i>
+                </a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cluestep">Cheer at the Druids' Circle. Equip a blue wizard hat, a bronze two-handed sword and HAM boots.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue wizard hat" class="itemc" src="https://oldschool.runescape.wiki/images/Blue_wizard_hat.png?04bdb">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze 2h sword" class="itemc" src="https://oldschool.runescape.wiki/images/Bronze_2h_sword.png?fe489">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham boots" class="itemc" src="https://oldschool.runescape.wiki/images/Ham_boots.png?64612">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#1">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Cheer at the games room. Have nothing equipped at all when you do.</td>
+              <td>
+                <center>Nothing</center>
+              </td>
+              <td>
+                <a type="button" class="">
+                  <i class="fa-sharp fa-solid fa-box-open stashn"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Clap in the main exam room in the Exam Centre. Equip a white apron, green gnome boots and leather gloves.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="White apron" class="itemc" src="https://oldschool.runescape.wiki/images/White_apron.png?f5d8b">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green boots" class="itemc" src="https://oldschool.runescape.wiki/images/Green_boots.png?e06cd">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather gloves" class="itemc" src="https://oldschool.runescape.wiki/images/Leather_gloves.png?6592f">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#3">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Clap on the causeway to the Wizards' Tower. Equip an iron medium helmet, emerald ring and a white apron.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron med helm" class="itemc" src="https://oldschool.runescape.wiki/images/Iron_med_helm.png?9e4d4">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emerald ring" class="itemc" src="https://oldschool.runescape.wiki/images/Emerald_ring.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="White apron" class="itemc" src="https://oldschool.runescape.wiki/images/White_apron.png?f5d8b">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#4">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Clap on the top level of the mill, north of East Ardougne. Equip a blue gnome robe top, HAM robe bottom and an unenchanted tiara.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue robe top" class="itemc" src="https://oldschool.runescape.wiki/images/Blue_robe_top.png?4e92f">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham robe" class="itemc" src="https://oldschool.runescape.wiki/images/Ham_robe.png?64612">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tiara" class="itemc" src="https://oldschool.runescape.wiki/images/Tiara.png?c9227">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#5">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dance a jig by the entrance to the Fishing Guild. Equip an emerald ring, a sapphire amulet, and a bronze chain body.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Emerald ring" class="itemc" src="https://oldschool.runescape.wiki/images/Emerald_ring.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Sapphire amulet" class="itemc" src="https://oldschool.runescape.wiki/images/Sapphire_amulet.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze chainbody" class="itemc" src="https://oldschool.runescape.wiki/images/Bronze_chainbody.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#6">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dance at the crossroads north of Draynor. Equip an iron chain body, a sapphire ring and a longbow.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron chainbody" class="itemc" src="https://oldschool.runescape.wiki/images/Iron_chainbody.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Sapphire ring" class="itemc" src="https://oldschool.runescape.wiki/images/Sapphire_ring.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Longbow" class="itemc" src="https://oldschool.runescape.wiki/images/Longbow.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#7">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dance at the entrance to the Grand Exchange. Equip a pink skirt, pink robe top and a body tiara.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pink skirt" class="itemc" src="https://oldschool.runescape.wiki/images/Pink_skirt.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pink robe top" class="itemc" src="https://oldschool.runescape.wiki/images/Pink_robe_top.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Body tiara" class="itemc" src="https://oldschool.runescape.wiki/images/Body_tiara.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#8">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Dance in the shack in Lumbridge Swamp. Equip a bronze dagger, iron full helmet and a gold ring.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze dagger" class="itemc" src="https://oldschool.runescape.wiki/images/Bronze_dagger.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron full helm" class="itemc" src="https://oldschool.runescape.wiki/images/Iron_full_helm.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold ring" class="itemc" src="https://oldschool.runescape.wiki/images/Gold_ring.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#9">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Do a jig in Varrock's rune store. Equip an air tiara and a staff of water.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Air tiara" class="itemc" src="https://oldschool.runescape.wiki/images/Air_tiara.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Staff of water" class="itemc" src="https://oldschool.runescape.wiki/images/Staff_of_water.png?3f71e">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#10">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Headbang in the mine north of Al Kharid. Equip a desert shirt, leather gloves and leather boots.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Desert shirt" class="itemc" src="https://oldschool.runescape.wiki/images/Desert_shirt.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather gloves" class="itemc" src="https://oldschool.runescape.wiki/images/Leather_gloves.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather boots" class="itemc" src="https://oldschool.runescape.wiki/images/Leather_boots.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#11">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Laugh at the crossroads south of the Sinclair mansion. Equip a cowl, a blue wizard robe top and an iron scimitar.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather cowl" class="itemc" src="https://oldschool.runescape.wiki/images/Leather_cowl.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Blue wizard robe" class="itemc" src="https://oldschool.runescape.wiki/images/Blue_wizard_robe.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron scimitar" class="itemc" src="https://oldschool.runescape.wiki/images/Iron_scimitar.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#12">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Panic on the pier where you catch the Fishing trawler. Have nothing equipped at all when you do.</td>
+              <td>
+                <center>Nothing</center>
+              </td>
+              <td>
+                <a type="button" class="">
+                  <i class="fa-sharp fa-solid fa-box-open stashn"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Shrug in the mine near Rimmington. Equip a gold necklace, a gold ring and a bronze spear.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold necklace" class="itemc" src="https://oldschool.runescape.wiki/images/Gold_necklace.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gold ring" class="itemc" src="https://oldschool.runescape.wiki/images/Gold_ring.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bronze spear" class="itemc" src="https://oldschool.runescape.wiki/images/Bronze_spear.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#13">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Spin at the crossroads north of Rimmington. Equip a green gnome hat, cream gnome top and leather chaps.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green hat" class="itemc" src="https://oldschool.runescape.wiki/images/Green_hat.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Cream robe top" class="itemc" src="https://oldschool.runescape.wiki/images/Cream_robe_top.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Leather chaps" class="itemc" src="https://oldschool.runescape.wiki/images/Leather_chaps.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#14">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Yawn in the Varrock library. Equip a green gnome robe top, HAM robe bottom and an iron warhammer.</td>
+              <td>
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Green robe top" class="itemc" src="https://oldschool.runescape.wiki/images/Green_robe_top.png?7a7c0">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ham robe" class="itemc" src="https://oldschool.runescape.wiki/images/Ham_robe.png?3f71e">
+                <img data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Iron warhammer" class="itemc" src="https://oldschool.runescape.wiki/images/Iron_warhammer.png?05d25">
+              </td>
+              <td>
+                <a type="button" class="" data-bs-toggle="modal" data-bs-target="#15">
+                  <i class="fa-sharp fa-solid fa-box-open stashy"></i>
+                </a>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Wizard's tower bridge</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/uVAt17z.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
     </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: North Ardougne mill</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/Bv6JBzK.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <div class="modal fade" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Taverley</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/QHE9R47.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Outside of Fishing guild</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/SnNgYvH.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Crossroad of Draynor Village</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/1X8lKfj.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Exam centre</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/qvfLchc.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Grand Exchange</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/JKCdF42.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Lumbridge swamp</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/7zw0ZW4.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Wizard's tower bridge</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/uVAt17z.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Varrock Rune store</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/n4jEi7t.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Al-Kharid mine</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/OINPzTn.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: North Ardougne mill</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/Bv6JBzK.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Crossroad at Sinclair mansion</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/dSZctVs.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Rimmington mine</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/cB95PQp.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Outside of Fishing guild</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/SnNgYvH.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Crossroad of Rimmington</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/lTOuGK9.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th><center>Location: Varrock Palace library</center></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://i.imgur.com/gbt45vd.png"></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="row">
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Plank.png?f976b"></center></div>
-        <div class="col"><center><img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5"></center></div>
-    </div>
-    <div class="row">
-        <div class="col itemnumer"><center>2</center></div>
-        <div class="col itemnumer"><center>10</center></div>
-    </div>
-    <div class="row">
-        <div class="col itemdesc"><center>Plank</center></div>
-        <div class="col itemdesc"><center>Steel nails</center></div>
-    </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Crossroad of Draynor Village</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/1X8lKfj.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Modal -->
-  <!-- Bootstrap JS and jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
-  <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl);
-    });
-
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-  </script>
-  <!-- Custom JavaScript -->
-  <script src="../app/app.js"></script>
-</body>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Grand Exchange</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/JKCdF42.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Lumbridge swamp</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/7zw0ZW4.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Varrock Rune store</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/n4jEi7t.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Al-Kharid mine</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/OINPzTn.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Crossroad at Sinclair mansion</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/dSZctVs.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Rimmington mine</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/cB95PQp.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Crossroad of Rimmington</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/lTOuGK9.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">
+                          </center>
+                        </div>
+                        <div class="col">
+                          <center>
+                            <img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">
+                          </center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemnumer">
+                          <center>2</center>
+                        </div>
+                        <div class="col itemnumer">
+                          <center>10</center>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col itemdesc">
+                          <center>Plank</center>
+                        </div>
+                        <div class="col itemdesc">
+                          <center>Steel nails</center>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">information</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <center>Location: Varrock Palace library</center>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="https://i.imgur.com/gbt45vd.png">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row">
+                        <div class="col">undefined<center>undefined<img src="https://oldschool.runescape.wiki/images/Plank.png?f976b">undefined</center>undefined</div>undefined<div class="col">undefined<center>undefined<img src="https://oldschool.runescape.wiki/images/Steel_nails.png?421a5">undefined</center>undefined</div>undefined
+                      </div>undefined<div class="row">undefined<div class="col itemnumer">undefined<center>2</center>undefined</div>undefined<div class="col itemnumer">undefined<center>10</center>undefined</div>undefined</div>undefined<div class="row">undefined<div class="col itemdesc">undefined<center>Plank</center>undefined</div>undefined<div class="col itemdesc">undefined<center>Steel nails</center>undefined</div>undefined</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i> Close </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- Custom JavaScript -->
+    <script src="../app/app.js"></script>
+  </body>
 </html>
